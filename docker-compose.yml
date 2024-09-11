@@ -4,6 +4,7 @@ services:
   web:
     build: .
     command: ./entrypoint.sh
+    working_dir: /code
     volumes:
       - ./app:/code
     ports:
