@@ -6,6 +6,7 @@ WORKDIR /code
 
 # Requirements installation
 RUN pip install -r requirements.txt
+RUN chmod +x /code/entrypoint.sh
 
 #COPY ./entrypoint.sh /
 #ENTRYPOINT ["entrypoint.sh"]
