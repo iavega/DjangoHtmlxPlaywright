@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    command: ./entrypoint.sh
+    command: sh -c './entrypoint.sh'
     working_dir: /code
     volumes:
       - ./app:/code
