@@ -3,7 +3,7 @@ version: '3'
 services:
   web:
     build: .
-    command: ./entrypoint.sh
+    command: ls
     volumes:
       - ./app:/code
     ports:
