@@ -4,7 +4,7 @@ services:
   web:
     build: .
     working_dir: /code
-    command: ./entrypoint.sh
+    command: bash -c "python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
     volumes:
       - ./app:/code
     ports:
