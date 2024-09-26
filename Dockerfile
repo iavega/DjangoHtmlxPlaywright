@@ -5,7 +5,7 @@ WORKDIR /code
 COPY ./app /code
 
 # Requirements installation
-RUN python -m pip install -r requirements.txt
+RUN pip install -r requirements.txt
 RUN chmod +x /code/entrypoint.sh
 
 #COPY ./entrypoint.sh /
